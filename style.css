@@ -18,3 +18,9 @@
   height: 37px;
   /* margin: 1px; */
 }
+.numberOfSquares {
+  display: block;
+  margin: 30px auto;
+  padding: 5px;
+  border-radius: 4px;
+}
