@@ -2,7 +2,9 @@ const container = document.querySelector(".container");
 const btn = document.querySelector(".numberOfSquares");
 let rowsAndCols;
 btn.addEventListener("click", () => {
-  rowsAndCols = Number(prompt("Enter number for your grid"));
+  rowsAndCols = Number(
+    prompt("Enter a number between 2 & 100 for the size of grid")
+  );
   console.log(rowsAndCols);
   changeGridBoardSize(rowsAndCols);
 });
@@ -20,14 +22,14 @@ function gridBoard(size) {
   const gridList = document.querySelectorAll(".grid-squares");
   gridList.forEach((grid) => {
     grid.addEventListener("mouseover", () => {
-      grid.style.backgroundColor = "red";
+      grid.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
     });
   });
-  gridList.forEach((grid) => {
-    grid.addEventListener("mouseout", () => {
-      grid.style.backgroundColor = "white";
-    });
-  });
+  // gridList.forEach((grid) => {
+  //   grid.addEventListener("mouseout", () => {
+  //     grid.style.backgroundColor = "white";
+  //   });
+  // });
 }
 gridBoard(16);
 

@@ -3,14 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+header {
+  text-align: center;
+}
 .container {
-  border: 1px solid red;
+  border: 1px solid #cb1211;
   display: flex;
   margin: auto;
-  /* height: 100vh;*/
+  height: 600px;
   width: 600px;
   flex-wrap: wrap;
   padding: 3px;
+  border-radius: 10px;
+  background-color: white;
 }
 .grid-squares {
   border: 1px solid black;
@@ -20,7 +25,15 @@
 }
 .numberOfSquares {
   display: block;
-  margin: 30px auto;
+  margin: 10px auto;
   padding: 5px;
   border-radius: 4px;
+}
+.etchy-body {
+  background-color: #cb1211;
+  margin: 10px auto;
+  width: 60%;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.6);
 }
